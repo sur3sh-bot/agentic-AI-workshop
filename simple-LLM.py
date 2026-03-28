@@ -1,13 +1,13 @@
 import os
 from openai import OpenAI
 
-# Set Parameters
+
 model_id = "nvidia/nemotron-3-super-120b-a12b:free"
 
 # Initialize OpenRouter client
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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",
+    api_key="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",
 )
 
 # Loop until user enters "quit"
