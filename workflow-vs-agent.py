@@ -11,9 +11,7 @@ client = OpenAI(
     api_key="",
 )
 
-# ---------------------------------------------------------
-# The Underlying Tool we want to run
-# ---------------------------------------------------------
+
 def schedule_meeting(title, time, participants):
     return f"✅ SUCCESS: Scheduled '{title}' at {time} with {participants}"
 
