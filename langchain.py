@@ -59,7 +59,7 @@ def get_time() -> str:
     """Get Time: Get the current time"""
     now = datetime.now()
     time_str = now.strftime("%I:%M:%S %p")
-    print("🔧 ... ...Tool: get_time")
+    print(" ... ...Tool: get_time")
     return f"The current time is: {time_str}"
 
 # Create agent with tools
