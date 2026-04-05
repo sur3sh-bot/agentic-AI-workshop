@@ -8,7 +8,7 @@ model_id = "minimax/minimax-m2.5:free"
 # Initialize OpenRouter client
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="",
+    api_key="", # insert api key here
 )
 
 
