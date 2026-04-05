@@ -11,7 +11,7 @@ model_id = "nvidia/nemotron-3-super-120b-a12b:free"
 # Initialize OpenRouter client
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="",
+    api_key="", # insert api key here
 )
 
 # OpenRouter Native Tool Definitions
