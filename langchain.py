@@ -7,7 +7,7 @@ from langchain.agents import create_agent
 from langgraph.checkpoint.memory import InMemorySaver
 
 # Set Parameters:
-model_id = "minimax/minimax-m2.5:free"
+model_id = ""
 
 # Initialize OpenRouter LLM
 llm = ChatOpenAI(
@@ -51,7 +51,7 @@ def get_date() -> str:
     """Get Date: Get the current date"""
     now = datetime.now()
     date_str = now.strftime("%A, %B %d, %Y")
-    print("🔧 ... ...Tool: get_date")
+    print(" ... ...Tool: get_date")
     return f"Today's date is: {date_str}"
 
 @tool
@@ -73,7 +73,7 @@ agent = create_agent(
 
 print("Welcome! I'm your personal assistant. I can tell you the current date, time, and weather. I can also calculate mathematical expressions. Type 'quit' to stop.")
 while True:
-    user_input = input("👤 You: ")
+    user_input = input(" You: ")
     if user_input.lower() == "quit":
         print("Agent: Goodbye!")
         break
