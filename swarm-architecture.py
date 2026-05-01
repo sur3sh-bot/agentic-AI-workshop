@@ -5,7 +5,7 @@ from langchain.agents import create_agent
 from langgraph_swarm import create_swarm, create_handoff_tool
 
 # Set Parameters:
-model_id = "gpt-5.4"
+model_id = ""
 
 # Initialize OpenRouter LLM
 model = ChatOpenAI(
