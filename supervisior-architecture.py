@@ -4,7 +4,7 @@ from langgraph_supervisor import create_supervisor
 from langchain.agents import create_agent
 
 # Set Parameters:
-model_id = "gpt-5.4"
+model_id = ""
 
 # Initialize OpenRouter LLM
 model = ChatOpenAI(
