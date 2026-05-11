@@ -82,7 +82,7 @@ def calculate_expression(expression):
 def get_weather(location):
     """Weather: Get weather information for a location"""
     weather_data = {
-        "new york": "Sunny, 72°F",
+        "new york": "Sunny, 73°F",
         "london": "Cloudy, 58°F",
         "tokyo": "Rainy, 65°F",
         "paris": "Partly cloudy, 68°F"
@@ -161,7 +161,7 @@ while True:
                 tool_result = call_tool(tool_call.function.name, tool_call.function.arguments)
 
                 # Append tool result directly back into memory (which will be fed right back to the LLM the next loop)
-                print("\n🧠 Feeding tool result back to LLM for final response...")
+                print("\n Feeding tool result back to LLM for final response...")
                 conversation_history.append({
                     "role": "tool",
                     "tool_call_id": tool_call.id,
