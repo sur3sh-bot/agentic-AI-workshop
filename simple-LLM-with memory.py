@@ -16,7 +16,7 @@ system_message = "You're a helpful personal assistant."
 conversation_history = [{"role": "system", "content": system_message}]
 
 while True:
-    user_input = input("👤 You: ")
+    user_input = input(" You: ")
     if user_input.lower() == "quit":
         print("Agent: Goodbye!")
         break
@@ -35,7 +35,7 @@ while True:
         message = response.choices[0].message
         conversation_history.append(message.model_dump(exclude_unset=True))
 
-        print("💬 LLM provided final response.\n")
+        print(" LLM provided final response.\n")
         print("Agent:", message.content)
 
     except Exception as e:
