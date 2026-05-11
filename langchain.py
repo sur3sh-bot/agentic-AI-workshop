@@ -6,7 +6,7 @@ from langchain.tools import tool
 from langchain.agents import create_agent
 from langgraph.checkpoint.memory import InMemorySaver
 
-# Set Parameters:
+
 model_id = ""
 
 # Initialize OpenRouter LLM
