@@ -83,7 +83,7 @@ def get_weather(location):
     """Weather: Get weather information for a location"""
     weather_data = {
         "new york": "Sunny, 73°F",
-        "london": "Cloudy, 58°F",
+        "london": "Cloudy, 56°F",
         "tokyo": "Rainy, 65°F",
         "paris": "Partly cloudy, 68°F"
     }
