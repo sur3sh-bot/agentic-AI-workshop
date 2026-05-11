@@ -6,7 +6,7 @@ from openai import OpenAI
 
 
 
-model_id = "nvidia/nemotron-3-super-120b-a12b:free"
+model_id = ""
 
 # Initialize OpenRouter client
 client = OpenAI(

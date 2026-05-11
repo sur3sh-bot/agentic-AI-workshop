@@ -3,7 +3,7 @@ import os
 from openai import OpenAI
 
 # Set Parameters:
-model_id = "minimax/minimax-m2.5:free"
+model_id = ""
 
 # Initialize OpenRouter client
 client = OpenAI(
@@ -13,7 +13,7 @@ client = OpenAI(
 
 
 def schedule_meeting(title, time, participants):
-    return f"✅ SUCCESS: Scheduled '{title}' at {time} with {participants}"
+    return f" SUCCESS: Scheduled '{title}' at {time} with {participants}"
 
 
 # 1. TRADITIONAL SCRIPT APPROACH (Rigid & Brittle)
@@ -46,9 +46,9 @@ def traditional_assistant(user_input):
     else:
         return " ERROR: Unknown command. Type 'help' for a list of commands."
 
-# ---------------------------------------------------------
+
 # 2. AI AGENT APPROACH (Flexible & Intent-Based)
-# ---------------------------------------------------------
+
 def agentic_assistant(user_input):
     """
     Relies on LLM reasoning and the native Tool schema.
@@ -100,9 +100,8 @@ def agentic_assistant(user_input):
     else:
         return f"Agent replied normally: {message.content}"
 
-# ---------------------------------------------------------
-# TEST CASES
-# ---------------------------------------------------------
+
+# TEST CASES-
 if __name__ == "__main__":
     print("="*60)
     print("TEST 1: The 'Perfect' Robotic-User")
