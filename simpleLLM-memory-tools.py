@@ -79,7 +79,7 @@ def calculate_expression(expression):
     except:
         return None
 
-def get_weather(location):
+def get_weather(location): #insert API for real weather data
     """Weather: Get weather information for a location"""
     weather_data = {
         "new york": "Sunny, 73°F",
