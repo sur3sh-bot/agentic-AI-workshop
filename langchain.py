@@ -25,7 +25,7 @@ def calculate_expression(expression: str) -> str:
         return "I couldn't compute that."
     try:
         result = eval(safe_expr)
-        print("🔧 ... ...Tool: calculator")
+        print(" ... ...Tool: calculator")
         return f"The result is: {result}"
     except:
         return "I couldn't compute that."
@@ -42,7 +42,7 @@ def get_weather(location: str) -> str:
     location_lower = location.lower()
     for city, weather in weather_data.items():
         if city in location_lower:
-            print("🔧 ... ...Tool: get_weather")
+            print(" ... ...Tool: get_weather")
             return f"Weather in {city.title()}: {weather}"
     return f"Weather information for {location} is not available in simulation."
 
