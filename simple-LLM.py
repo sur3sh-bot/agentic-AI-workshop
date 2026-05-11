@@ -13,7 +13,7 @@ client = OpenAI(
 # Loop until user enters "quit"
 while True:
     # Query to send to llm
-    query = input("👤 Enter your query (or 'quit' to exit): ")
+    query = input(" Enter your query (or 'quit' to exit): ")
 
     # Check if user wants to quit
     if query.lower() == "quit":
@@ -39,7 +39,7 @@ while True:
 
         # Extract and print the response
         output = response.choices[0].message.content
-        print(f"👤 Query: {query}")
+        print(f" You: {query}")
         print(f"\nResponse:\n{output}\n")
 
     except Exception as e:
