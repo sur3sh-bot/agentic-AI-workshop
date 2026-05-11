@@ -15,9 +15,9 @@ client = OpenAI(
 def schedule_meeting(title, time, participants):
     return f"✅ SUCCESS: Scheduled '{title}' at {time} with {participants}"
 
-# ---------------------------------------------------------
+
 # 1. TRADITIONAL SCRIPT APPROACH (Rigid & Brittle)
-# ---------------------------------------------------------
+
 def traditional_assistant(user_input):
     """
     Relies on explicit keywords, exact order, and rigid parsing.
@@ -42,9 +42,9 @@ def traditional_assistant(user_input):
             return schedule_meeting(title, time, participants)
 
         except IndexError:
-            return "❌ ERROR: Invalid format. Must be 'schedule meeting: title | time | person1, person2'"
+            return " ERROR: Invalid format. Must be 'schedule meeting: title | time | person1, person2'"
     else:
-        return "❌ ERROR: Unknown command. Type 'help' for a list of commands."
+        return " ERROR: Unknown command. Type 'help' for a list of commands."
 
 # ---------------------------------------------------------
 # 2. AI AGENT APPROACH (Flexible & Intent-Based)
