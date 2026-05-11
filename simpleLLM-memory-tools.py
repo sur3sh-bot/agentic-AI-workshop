@@ -153,7 +153,7 @@ while True:
 
         # Check if the model chose to use a tool
         if message.tool_calls:
-            print("\n🔄 LLM Response (Tool Call):")
+            print("\n LLM Response (Tool Call):")
             for tool_call in message.tool_calls:
                 print(f"[{tool_call.function.name}] => {tool_call.function.arguments}")
 
